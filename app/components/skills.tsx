@@ -61,8 +61,8 @@ export default function SkillSection() {
         {/* Skills list */}
         <div className="min-w-full">
           <div className=" flex flex-row justify-around flex-wrap min-h-64">
-            {skills.map((skill) => (
-              <div className="skill my-1 mr-1">
+            {skills.map((skill, idx) => (
+              <div key={idx} className="skill my-1 mr-1">
                 <div className="skill-name">{skill.name}</div>
                 <progress
                   className="progress progress-primary w-56"
