@@ -10,8 +10,8 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="max-w-md">
-          <h6 className="text-sm">Hi, I'm</h6>
-          <h1 className="text-5xl font-bold">Mohab Amr</h1>
+          <h6 className="text-sm">Hi, I&apos;m</h6>
+          <h1 className="text-5xl font-bold">Mohab Amr </h1>
           <div className="mt-2 flex flex-row">
             <a href="mailto:mohabamr1@gmail.com" className="hover:text-primary">
               <svg
@@ -78,7 +78,7 @@ export default function HeroSection() {
           <p className="pb-6 pt-4">
             Experienced fullstack developer skilled in Node.js, Angular, React
             Native, and Django. <br /> Passionate about building robust web and
-            mobile applications that meet clients' unique needs. <br /> Let's
+            mobile applications that meet clients&apos; unique needs. <br /> Let&apos;s
             work together to bring your vision to life!
           </p>
           <div className="flex flex-row justify-start">

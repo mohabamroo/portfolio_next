@@ -15,7 +15,7 @@ export default function ContactSection() {
       </figure>
       <div className="card-body">
         <h2 className="card-title text-5xl">Got a new project idea?</h2>
-        <p className="text-2xl my-4">Don't hesitate to contact me!</p>
+        <p className="text-2xl my-4">Don&apos;t hesitate to contact me!</p>
         <div className="card-actions justify-end">
           <a href="tel:+1100828725" className="btn btn-light">
             Call Phone
