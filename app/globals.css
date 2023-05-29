@@ -45,3 +45,11 @@ body {
 .margin-auto {
   margin: auto;
 }
+
+/* NOTE: custom fix for services section */
+#services {
+
+  .card.bg-base-100 {
+    background-color: #2a303c;
+  }
+}
