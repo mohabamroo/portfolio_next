@@ -6,6 +6,7 @@ import SkillSection from "./components/skills";
 import Footer from "./components/footer";
 import HobbiesSection from "./components/hobbies";
 import ContactSection from "./components/contact";
+import PlatformsSection from "./components/platforms";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <SkillSection />
           <HobbiesSection />
 
+          <PlatformsSection />
           <ContactSection />
 
           <Footer />
