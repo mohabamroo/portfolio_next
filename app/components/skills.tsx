@@ -7,7 +7,7 @@ export default function SkillSection() {
     },
     {
       name: "Next.js",
-      level: 6
+      level: 5
     },
     {
       name: "Node.js",
@@ -31,11 +31,11 @@ export default function SkillSection() {
     },
     {
       name: "Kubernetes",
-      level: 6
+      level: 5
     },
     {
       name: "React Native",
-      level: 7
+      level: 6
     },
     {
       name: "PostgreSQL",
@@ -63,7 +63,19 @@ export default function SkillSection() {
           <div className=" flex flex-row justify-around flex-wrap min-h-64">
             {skills.map((skill, idx) => (
               <div key={idx} className="skill my-1 mr-1">
-                <div className="skill-name">{skill.name}</div>
+                <div className="flex flex-row justify-between align-center">
+                  <div className="skill-name">{skill.name}</div>
+                  <div className="prose lg:prose-sm prose-gray italic">
+                    {skill.level >= 1 && skill.level < 4 && (
+                      <span>Beginner</span>
+                    )}
+                    {skill.level >= 4 && skill.level < 6 && <span>Medium</span>}
+                    {skill.level >= 6 && skill.level < 9 && (
+                      <span>Advanced</span>
+                    )}
+                    {skill.level >= 9 && <span>Expert</span>}
+                  </div>
+                </div>
                 <progress
                   className="progress progress-primary w-56"
                   value={(skill.level / 10) * 100}
