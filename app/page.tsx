@@ -7,6 +7,8 @@ import Footer from "./components/footer";
 import HobbiesSection from "./components/hobbies";
 import ContactSection from "./components/contact";
 import PlatformsSection from "./components/platforms";
+import ProjectsSection from "./components/projects";
+import Timeline from "./components/timeline";
 
 export default function Home() {
   return (
@@ -18,8 +20,9 @@ export default function Home() {
           <StatsSection />
           <ServicesSection />
           <SkillSection />
+          <ProjectsSection />
           <HobbiesSection />
-
+          <Timeline />
           <PlatformsSection />
           <ContactSection />
 

@@ -51,7 +51,7 @@ export default function SkillSection() {
     }
   ];
   return (
-    <div className="hero my-10">
+    <div id="skills" className="hero my-10">
       <div className="max-w-5xl">
         <div className="text-center my-8">
           <h1 className="text-3xl font-bold text-center text-bold text-secondary">
@@ -62,18 +62,22 @@ export default function SkillSection() {
         <div className="min-w-full">
           <div className=" flex flex-row justify-around flex-wrap min-h-64">
             {skills.map((skill, idx) => (
-              <div key={idx} className="skill my-1 mr-1">
+              <div key={idx} className="skill my-2 mr-1">
                 <div className="flex flex-row justify-between align-center">
                   <div className="skill-name">{skill.name}</div>
-                  <div className="prose lg:prose-sm prose-gray italic">
-                    {skill.level >= 1 && skill.level < 4 && (
-                      <span>Beginner</span>
-                    )}
-                    {skill.level >= 4 && skill.level < 6 && <span>Medium</span>}
-                    {skill.level >= 6 && skill.level < 9 && (
-                      <span>Advanced</span>
-                    )}
-                    {skill.level >= 9 && <span>Expert</span>}
+                  <div className="italic">
+                    <span className="text-xs">
+                      {skill.level >= 1 && skill.level < 4 && (
+                        <span>Beginner</span>
+                      )}
+                      {skill.level >= 4 && skill.level < 6 && (
+                        <span>Medium</span>
+                      )}
+                      {skill.level >= 6 && skill.level < 9 && (
+                        <span>Advanced</span>
+                      )}
+                      {skill.level >= 9 && <span>Expert</span>}
+                    </span>
                   </div>
                 </div>
                 <progress

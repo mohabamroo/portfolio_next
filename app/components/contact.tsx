@@ -1,6 +1,9 @@
 export default function ContactSection() {
   return (
-    <div id="contact" className="card w-full bg-base-100 h-96 shadow-xl image-full">
+    <div
+      id="contact"
+      className="card w-full bg-base-100 h-96 shadow-xl image-full"
+    >
       <figure>
         <img
           style={{

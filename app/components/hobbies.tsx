@@ -1,7 +1,7 @@
 export default function HobbiesSection() {
   // TODO: add const for hobbies
   return (
-    <div className="hero min-200 py-10 my-10">
+    <div id="hobbies" className="hero min-200 py-10 my-10">
       <div className="max-w-5xl">
         <div className="text-center my-8">
           <h1 className="text-3xl font-bold text-center text-bold text-secondary">
