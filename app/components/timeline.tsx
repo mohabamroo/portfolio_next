@@ -80,7 +80,7 @@ export default function Timeline() {
             {/* Actual checkpoints */}
             {stops.map((x, idx) => {
               return (
-                <div className="mt-6 sm:mt-0 sm:mb-12">
+                <div key={idx} className="mt-6 sm:mt-0 sm:mb-12">
                   <div className="flex flex-col sm:flex-row items-center">
                     <div
                       className={

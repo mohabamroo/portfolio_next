@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 
 const projects = [
@@ -228,16 +229,16 @@ export default function ProjectsSection() {
         </div>
         <div className="min-w-full">
           <div className="grid grid-cols-5 gap-3 hidden lg:grid">
-            {visibleCards.map((project) => (
-              <div className={"h-full " + project.grid}>
+            {visibleCards.map((project, idx) => (
+              <div key={idx} className={"h-full " + project.grid}>
                 {renderProject(project)}
               </div>
             ))}
           </div>
 
           <div className="grid grid-cols-5 gap-3 lg:hidden">
-            {visibleCards.map((project) => (
-              <div className={"h-full col-span-5"}>
+            {visibleCards.map((project, idx) => (
+              <div key={idx} className={"h-full col-span-5"}>
                 {renderProject(project)}
               </div>
             ))}

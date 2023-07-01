@@ -51,7 +51,11 @@ export default function PlatformsSection() {
                     target="_blank"
                     className="w-16 h-16 rounded-xl bg-white p-1"
                   >
-                    <img style={{ objectFit: "contain" }} src={platform.logo} />
+                    <img
+                      style={{ objectFit: "contain" }}
+                      src={platform.logo}
+                      alt={platform.name}
+                    />
                   </a>
                 </div>
               </div>

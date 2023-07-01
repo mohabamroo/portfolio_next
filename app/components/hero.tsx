@@ -5,7 +5,7 @@ export default function HeroSection() {
         <div>
           <div className="avatar">
             <div className="w-64 rounded-full border-2 border-base-100">
-              <img src="/img/profile.jpg" />
+              <img src="/img/profile.jpg" alt={"profile"} />
             </div>
           </div>
         </div>
@@ -78,8 +78,8 @@ export default function HeroSection() {
           <p className="pb-6 pt-4 px-1">
             Experienced fullstack developer skilled in Node.js, Angular, React
             Native, and Django. <br /> Passionate about building robust web and
-            mobile applications that meet clients&apos; unique needs. <br /> Let&apos;s
-            work together to bring your vision to life!
+            mobile applications that meet clients&apos; unique needs. <br />{" "}
+            Let&apos;s work together to bring your vision to life!
           </p>
           <div className="flex flex-row justify-start">
             <a
